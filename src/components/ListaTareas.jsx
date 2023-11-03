@@ -21,6 +21,13 @@ const ListaTareas = () => {
        </Link>
     </header>
 
+    <header>
+      <h1>List of Task {taskState.length}</h1>
+      <Link to="/create-task">
+       Create Task
+       </Link>
+    </header>
+
     <div>
       {taskState.map (task => (
         <div

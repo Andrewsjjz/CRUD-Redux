@@ -21,7 +21,7 @@ const ListaTareas = () => {
        </Link>
     </header>
 
-    <div>
+    <div className="bg-red-500">
       {taskState.map (task => (
         <div
         key={task.id}

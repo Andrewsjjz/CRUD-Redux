@@ -46,12 +46,14 @@ useEffect(() => {
     setTask(tasks.find(task => task.id ===params.id))
 
   }
-}, [])
+}, [params.id, tasks])
 
   return (
     <>
       <form onSubmit={handleSubmit}>
+        <div className="m-10 flex items-center gap-10">
         <input 
+        className="border-2 border-black"
         name="title"
         type="text" 
         placeholder='Titulo de tarea' 
@@ -59,12 +61,14 @@ useEffect(() => {
         value={task.title}
         />
         <textarea 
+        className="border-2 border-black"
         name="description" 
         placeholder='Descripcion de tarea'
         onChange={handleChange}
         value={task.description}
         ></textarea>
         <button className='bg-blue-700 text-white font-bold'>Guardar</button>
+        </div>
       </form>
     </>
   )

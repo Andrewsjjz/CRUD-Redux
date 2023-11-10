@@ -25,13 +25,9 @@ const handleChange = (e) => {
 
 const handleSubmit = (e) => {
     e.preventDefault()
-
     if (params.id) {
-
       dispatch(updateTask(task))
-
     } else {
-
       dispatch(addTask({
         ...task,
         id: uuid(),
@@ -44,7 +40,6 @@ const handleSubmit = (e) => {
 useEffect(() => {
   if (params.id) {
     setTask(tasks.find(task => task.id ===params.id))
-
   }
 }, [params.id, tasks])
 

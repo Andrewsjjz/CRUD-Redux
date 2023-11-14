@@ -45,6 +45,8 @@ useEffect(() => {
 
   return (
     <>
+    <div className="bg-red-300">
+
       <form onSubmit={handleSubmit}>
         <div className="m-10 flex items-center gap-10">
         <input 
@@ -65,6 +67,7 @@ useEffect(() => {
         <button className='bg-blue-700 text-white font-bold'>Guardar</button>
         </div>
       </form>
+    </div>
     </>
   )
 }

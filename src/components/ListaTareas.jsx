@@ -31,6 +31,8 @@ const ListaTareas = () => {
             <div className="mb-6">
 
               <div className="font-bold text-xl mb-2">{task.title}</div>
+              <div className="font-bold text-xl mb-2">{task.title}</div>
+              <p className="text-gray-700 text-base">{task.description}</p>
               <p className="text-gray-700 text-base">{task.description}</p>
 
               <div className="flex items-center justify-between">

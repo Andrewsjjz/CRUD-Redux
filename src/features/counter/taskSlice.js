@@ -19,7 +19,14 @@ const initialState = [
     title: "Tarea 3",
     description: "lorem lorem lorem",
     completed: false
+  },
+  {
+    id: "4",
+    title: "Tarea 4",
+    description: "lorem lorem lorem",
+    completed: false
   }
+  
 ]
 
 export const taskSlice = createSlice({

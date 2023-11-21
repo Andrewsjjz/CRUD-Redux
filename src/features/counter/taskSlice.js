@@ -25,6 +25,12 @@ const initialState = [
     title: "Tarea 4",
     description: "lorem lorem lorem",
     completed: false
+  },
+  {
+    id: "5",
+    title: "Tarea 5",
+    description: "lorem lorem lorem",
+    completed: false
   }
   
 ]
@@ -36,16 +42,12 @@ export const taskSlice = createSlice({
       addTask : (state, action) => {
         state.push(action.payload)
       },
-
       deleteTask : (state, action) => {
-
         const taskFind = state.find(task => task.id === action.payload)
-
         if (taskFind){
           state.splice(state.indexOf(taskFind), 1)
         }
       },
-
       updateTask : (state, action) => {
         const {id, title, description} = action.payload
 

@@ -14,9 +14,9 @@ const ListaTareas = () => {
     <>
       <header className="flex">
 
-        <h1>List of Task {taskState.length}</h1>
+        <h1 className="bg-black">List of Task {taskState.length}</h1>
 
-        <button className="bg-blue-300">
+        <button className="bg-blue-900">
           <Link to="/create-task">Create Task</Link>
         </button>
         

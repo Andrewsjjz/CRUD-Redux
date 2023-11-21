@@ -45,7 +45,7 @@ useEffect(() => {
 
   return (
     <>
-    <div className="bg-red-300">
+    <div className="bg-red-800">
 
       <form onSubmit={handleSubmit}>
         <div className="m-10 flex items-center gap-10">

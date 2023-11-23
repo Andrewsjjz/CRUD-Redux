@@ -13,13 +13,11 @@ const ListaTareas = () => {
   return (
     <>
       <header className="flex">
-
         <h1 className="bg-black">List of Task {taskState.length}</h1>
-
         <button className="bg-blue-900">
           <Link to="/create-task">Create Task</Link>
         </button>
-        
+      
       </header>
 
       <div className="grid grid-cols-3 gap-4 bg-green-300">

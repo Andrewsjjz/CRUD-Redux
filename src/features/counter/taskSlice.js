@@ -14,24 +14,6 @@ const initialState = [
     description: "lorem lorem lorem",
     completed: false
   },
-  {
-    id: "3",
-    title: "Tarea 3",
-    description: "lorem lorem lorem",
-    completed: false
-  },
-  {
-    id: "4",
-    title: "Tarea 4",
-    description: "lorem lorem lorem",
-    completed: false
-  },
-  {
-    id: "5",
-    title: "Tarea 5",
-    description: "lorem lorem lorem",
-    completed: false
-  }
   
 ]
 

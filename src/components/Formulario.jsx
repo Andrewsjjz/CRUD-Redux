@@ -10,7 +10,6 @@ const [task, setTask] = useState ({
     title : "",
     description : ""
 })
-
 const dispatch = useDispatch()
 const navigate = useNavigate()
 const params = useParams()
@@ -22,7 +21,6 @@ const handleChange = (e) => {
         [e.target.name]: e.target.value
     })
 }
-
 const handleSubmit = (e) => {
     e.preventDefault()
     if (params.id) {
@@ -36,7 +34,6 @@ const handleSubmit = (e) => {
     }
     navigate('/')
 }
-
 useEffect(() => {
   if (params.id) {
     setTask(tasks.find(task => task.id ===params.id))
@@ -45,6 +42,7 @@ useEffect(() => {
 
   return (
     <>
+    
     <div className="bg-red-800">
 
       <form onSubmit={handleSubmit}>
@@ -57,6 +55,7 @@ useEffect(() => {
         onChange={handleChange}
         value={task.title}
         />
+
         <textarea 
         className="border-2 border-black"
         name="description" 
@@ -64,9 +63,11 @@ useEffect(() => {
         onChange={handleChange}
         value={task.description}
         ></textarea>
+        
         <button className='bg-blue-700 text-white font-bold'>Guardar</button>
         </div>
       </form>
+
     </div>
     </>
   )

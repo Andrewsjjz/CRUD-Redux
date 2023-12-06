@@ -17,38 +17,29 @@ const ListaTareas = () => {
         <button className="bg-blue-900">
           <Link to="/create-task">Create Task</Link>
         </button>
-      
       </header>
 
       <div className="grid grid-cols-3 gap-4 bg-green-300">
-
         {taskState.map((task) => (
-
           <div
             key={task.id}
             className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col"
           >
-
             <div className="mb-6">
-
               <div className="font-bold text-xl mb-2">{task.title}</div>
               <div className="font-bold text-xl mb-2">{task.title}</div>
               <p className="text-gray-700 text-base">{task.description}</p>
               <p className="text-gray-700 text-base">{task.description}</p>
-
               <div className="flex items-center justify-between">
-
                 <Link to={`/update-task/${task.id}`} className="bg-blue-500">
                   Actualizar
                 </Link>
-
                 <button
                   className="bg-red-500"
                   onClick={() => handleDelete(task.id)}
                 >
                   Eliminar
                 </button>
-                
               </div>
             </div>
           </div>

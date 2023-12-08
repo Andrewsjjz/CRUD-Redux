@@ -33,22 +33,6 @@ const initialState = [
   title: "Tarea 6",
   description: "lorem lorem lorem",
   completed: false
-},  { id: "7",
-title: "Tarea 7",
-description: "lorem lorem lorem",
-completed: false
-},  { id: "8",
-title: "Tarea 8",
-description: "lorem lorem lorem",
-completed: false
-},  { id: "9",
-title: "Tarea 9",
-description: "lorem lorem lorem",
-completed: false
-},  { id: "10",
-title: "Tarea 10",
-description: "lorem lorem lorem",
-completed: false
 },
   
 ]

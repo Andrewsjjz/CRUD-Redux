@@ -21,8 +21,10 @@ const tasks = useSelector(state => state.tasks)
 
 const handleChange = (e) => {
     setTask({
+        
         ...task,
         [e.target.name]: e.target.value
+        
     })
 }
 const handleSubmit = (e) => {

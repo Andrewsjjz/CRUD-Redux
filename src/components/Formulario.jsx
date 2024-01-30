@@ -2,14 +2,18 @@ import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { addTask, updateTask } from "../features/counter/taskSlice"
 import { v4 as uuid } from "uuid"
+
 import { useNavigate, useParams } from "react-router-dom"
 
 const Formulario = () => {
 
 const [task, setTask] = useState ({
+    
     title : "",
     description : ""
+    
 })
+    
 const dispatch = useDispatch()
 const navigate = useNavigate()
 const params = useParams()
